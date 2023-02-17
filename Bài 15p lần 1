@@ -1,0 +1,32 @@
+** BÀI KIỂM TRA 15P LẦN 1:
+
+------------------------------------------------
+Đề 1: Tính tổng giá trị các phần tử số có trong xâu s.
+Ví dụ:
+input: s = "abc123def456"
+output: tong = 21
+
+CODE:
+
+s = input("Nhập vào xâu s: ")
+tong = 0
+for i in range(len(s)):
+    if s[i] in "0123456789":
+        tong = tong + int(s[i])
+print("tong = ", tong)
+
+
+------------------------------------------------
+Đề 2: Đếm số lượng các phần tử số có trong xâu s.
+Ví dụ:
+input: s = "abc123def456"
+output: tong = 6
+
+CODE:
+
+s = input("Nhập vào xâu s: ")
+dem = 0
+for i in range(len(s)):
+    if s[i] in "0123456789":
+        dem = dem + 1
+print("tong = ", dem)
